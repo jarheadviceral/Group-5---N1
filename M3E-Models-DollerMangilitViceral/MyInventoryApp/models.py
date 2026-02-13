@@ -18,9 +18,9 @@ from django.db import models
 from django.utils import timezone
 
 class Supplier(models.Model): # i followed the same format as the sample in the slides
-    name = models.CharField(max_length=300)
-    city = models.CharField(max_length=300)
-    country = models.CharField(max_length=300)
+    name = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
+    country = models.CharField(max_length=100)
     created_at = models.DateTimeField(blank=True, null=True)
     objects = models.Manager()
     
@@ -31,12 +31,12 @@ class Supplier(models.Model): # i followed the same format as the sample in the 
         return f"{self.name} - {self.city}, {self.country} created at: {self.created_at}"
 
 class WaterBottle(models.Model):
-    sku =  models.CharField(max_length=300, unique=True)
-    brand = models.CharField(max_length=300)
-    cost = models.DecimalField(max_digits=300, decimal_places=2)
-    size = models.CharField(max_length=300)
-    mouth_size = models.CharField(max_length=300)
-    color = models.CharField(max_length=300)
+    sku =  models.CharField(max_length=10, unique=True)
+    brand = models.CharField(max_length=50)
+    cost = models.DecimalField(max_digits=10, decimal_places=2)
+    size = models.CharField(max_length=50)
+    mouth_size = models.CharField(max_length=50)
+    color = models.CharField(max_length=50)
     supplied_by = models.ForeignKey(Supplier, on_delete=models.CASCADE) # from the slides too
     current_quantity = models.IntegerField()
 
