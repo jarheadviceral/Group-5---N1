@@ -1,0 +1,36 @@
+[S:DOLLERTash] WaterBottle.objects.all()
+[S:DOLLERTash] Supplier.objects.order_by('country')
+[S:DOLLERTash] WaterBottle.objects.order_by('brand')
+[S:DOLLERTash] WaterBottle.objects.filter(color='Black')
+
+[S:MANGILITBasti] 
+[S:MANGILITBasti] 
+[S:MANGILITBasti] 
+[S:MANGILITBasti]
+
+[S:VICERALJared] 
+[S:VICERALJared] 
+[S:VICERALJared] 
+[S:VICERALJared]
+
+[P: DOLLERTash] [S:LASTNAMEFirstname] <statement>
+[P: DOLLERTash] [S:LASTNAMEFirstname] <statement>
+[P: DOLLERTash] [S:LASTNAMEFirstname] <statement>
+[P: DOLLERTash] [S:LASTNAMEFirstname] <statement>
+[P: DOLLERTash] [S:LASTNAMEFirstname] <statement>
+[P: DOLLERTash] [S:LASTNAMEFirstname] <statement>
+[P: DOLLERTash] [S:LASTNAMEFirstname] <statement>
+
+[P: MANGILITBasti] [S:LASTNAMEFirstname] <statement>
+[P: MANGILITBasti] [S:LASTNAMEFirstname] <statement>
+[P: MANGILITBasti] [S:LASTNAMEFirstname] <statement>
+[P: MANGILITBasti] [S:LASTNAMEFirstname] <statement>
+[P: MANGILITBasti] [S:LASTNAMEFirstname] <statement>
+[P: MANGILITBasti] [S:LASTNAMEFirstname] <statement>
+
+[P: VICERALJared] [S:LASTNAMEFirstname] <statement>
+[P: VICERALJared] [S:LASTNAMEFirstname] <statement>
+[P: VICERALJared] [S:LASTNAMEFirstname] <statement>
+[P: VICERALJared] [S:LASTNAMEFirstname] <statement>
+[P: VICERALJared] [S:LASTNAMEFirstname] <statement>
+[P: VICERALJared] [S:LASTNAMEFirstname] <statement>
