@@ -1,3 +1,5 @@
+# required statements
+
 [S:DOLLERTash] WaterBottle.objects.all()
 [S:DOLLERTash] Supplier.objects.order_by('country')
 [S:DOLLERTash] WaterBottle.objects.order_by('brand')
@@ -8,10 +10,12 @@
 [S:MANGILITBasti] 
 [S:MANGILITBasti]
 
-[S:VICERALJared] 
-[S:VICERALJared] 
-[S:VICERALJared] 
-[S:VICERALJared]
+[S:VICERALJared] WaterBottle.objects.filter(cost__gte = 3000)
+[S:VICERALJared] WaterBottle.objects.filter(supplier__name__in= ['Bucky, Inc.', 'Meister, Inc.'] )
+[S:VICERALJared] WaterBottle.objects.filter(size__icontains='Oz').order_by('-cost')
+[S:VICERALJared] WaterBottle.objects.filter(mouth_size='Wide Mouth').exclude(cost=3000)
+
+# prompts + statements
 
 [P: DOLLERTash] [S:LASTNAMEFirstname] <statement>
 [P: DOLLERTash] [S:LASTNAMEFirstname] <statement>
