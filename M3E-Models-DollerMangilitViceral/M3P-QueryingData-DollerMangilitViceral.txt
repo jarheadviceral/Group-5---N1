@@ -21,9 +21,9 @@
 [P: DOLLERTash] [S:MANGILITBasti] WaterBottle.objects.filter(supplied_by__name__in=['Crystal, Inc.', 'Pearl, Inc.'])
 [P: DOLLERTash] [S:LASTNAMEFirstname] WaterBottle.objects.filter(color='Blue', supplied_by__name='Bucky, Inc.')
 [P: DOLLERTash] [S:MANGILITBasti] WaterBottle.objects.filter(color='Transparent')
-[P:DOLLERTash] [S:VICERALJared] WaterBottle.objects.filter(cost__gte=2000, mouth_size='Standard Mouth')
-[P:DOLLERTash] [S:VICERALJared] WaterBottle.objects.filter(size__icontains='Liter').order_by('supplied_by__name')
-[P:DOLLERTash] [S:VICERALJared] WaterBottle.objects.filter(supplied_by__name='Crystal, Inc.', color='White')
+[P: DOLLERTash] [S:VICERALJared] WaterBottle.objects.filter(cost__gte=2000, mouth_size='Standard Mouth')
+[P: DOLLERTash] [S:VICERALJared] WaterBottle.objects.filter(size__icontains='Liter').order_by('supplied_by__name')
+[P: DOLLERTash] [S:VICERALJared] WaterBottle.objects.filter(supplied_by__name='Crystal, Inc.', color='White')
 
 [P: MANGILITBasti] [S:DOLLERTash] WaterBottle.objects.filter(supplied_by__name='PureFresh 67, Inc.')
 [P: MANGILITBasti] [S:DOLLERTash] WaterBottle.objects.filter(supplied_by__name='Sailfish, Inc.', cost__lt=2500)
