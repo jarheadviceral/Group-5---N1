@@ -1,7 +1,7 @@
 '''
 Tashannah H. Doller, 245541
 Sebastian O. Mangilit, 242880
-Jared Viceral, 246738
+Rob Jared S. Viceral, 246738
 17 February 2026
 
 We hereby attest to the truth of the following facts:
@@ -15,9 +15,8 @@ citations in the comments of our program.
 '''
 
 from django.db import models
-from django.utils import timezone
 
-class Supplier(models.Model): # i followed the same format as the sample in the slides
+class Supplier(models.Model): 
     name = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
     country = models.CharField(max_length=100)
@@ -37,7 +36,7 @@ class WaterBottle(models.Model):
     size = models.CharField(max_length=50)
     mouth_size = models.CharField(max_length=50)
     color = models.CharField(max_length=50)
-    supplied_by = models.ForeignKey(Supplier, on_delete=models.CASCADE) # from the slides too
+    supplied_by = models.ForeignKey(Supplier, on_delete=models.CASCADE) 
     current_quantity = models.IntegerField()
 
     def __str__(self):
