@@ -1,6 +1,6 @@
 '''
 Tashannah H. Doller, 245541
-Sebastian Mangilit, 242880
+Sebastian O. Mangilit, 242880
 Jared Viceral, 246738
 17 February 2026
 
