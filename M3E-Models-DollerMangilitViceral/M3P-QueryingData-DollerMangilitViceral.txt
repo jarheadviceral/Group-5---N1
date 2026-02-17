@@ -28,9 +28,9 @@
 [P: MANGILITBasti] [S:LASTNAMEFirstname] <statement>
 [P: MANGILITBasti] [S:LASTNAMEFirstname] <statement>
 
-[P: VICERALJared] [S:LASTNAMEFirstname] <statement>
-[P: VICERALJared] [S:LASTNAMEFirstname] <statement>
-[P: VICERALJared] [S:LASTNAMEFirstname] <statement>
+[P: VICERALJared] [S:DOLLERTash] WaterBottle.objects.filter(supplied_by__name='Meister, Inc.')
+[P: VICERALJared] [S:DOLLERTash] WaterBottle.objects.filter(color='Red')
+[P: VICERALJared] [S:DOLLERTash] WaterBottle.objects.filter(size='32 Oz')
 [P: VICERALJared] [S:LASTNAMEFirstname] <statement>
 [P: VICERALJared] [S:LASTNAMEFirstname] <statement>
 [P: VICERALJared] [S:LASTNAMEFirstname] <statement>
