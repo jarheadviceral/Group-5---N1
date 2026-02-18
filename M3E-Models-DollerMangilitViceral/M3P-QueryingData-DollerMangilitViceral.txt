@@ -12,7 +12,7 @@
 
 [S:VICERALJared] WaterBottle.objects.filter(cost__gte = 3000)
 [S:VICERALJared] WaterBottle.objects.filter(supplied_by__name__in=['Bucky, Inc.', 'Meister, Inc.'])
-[S:VICERALJared] WaterBottle.objects.filter(size__icontains='Oz').order_by('-cost')
+[S:VICERALJared] WaterBottle.objects.filter(size__contains='Oz').order_by('-cost')
 [S:VICERALJared] WaterBottle.objects.filter(mouth_size='Wide Mouth').exclude(cost=3000)
 
 # prompts + statements
@@ -21,7 +21,7 @@
 [P: DOLLERTash] [S:MANGILITBasti] WaterBottle.objects.filter(supplied_by__name__in=['Crystal, Inc.', 'Pearl, Inc.'])
 [P: DOLLERTash] [S:MANGILITBasti] WaterBottle.objects.filter(color='Transparent')
 [P: DOLLERTash] [S:VICERALJared] WaterBottle.objects.filter(cost__gte=2000, mouth_size='Standard Mouth')
-[P: DOLLERTash] [S:VICERALJared] WaterBottle.objects.filter(size__icontains='Liter').order_by('supplied_by__name')
+[P: DOLLERTash] [S:VICERALJared] WaterBottle.objects.filter(size__contains='Liter').order_by('supplied_by__name')
 [P: DOLLERTash] [S:VICERALJared] WaterBottle.objects.filter(supplied_by__name='Crystal, Inc.', color='White')
 
 [P: MANGILITBasti] [S:DOLLERTash] WaterBottle.objects.filter(supplied_by__name='PureFresh 67, Inc.')
@@ -34,6 +34,6 @@
 [P: VICERALJared] [S:DOLLERTash] WaterBottle.objects.filter(supplied_by__name='Meister, Inc.')
 [P: VICERALJared] [S:DOLLERTash] WaterBottle.objects.filter(color='Red')
 [P: VICERALJared] [S:DOLLERTash] WaterBottle.objects.filter(size='32 Oz')
-[P: VICERALJared] [S:MANGILITBasti] WaterBottle.objects.filter(color__in=['Red', 'Blue'])
+[P: VICERALJared] [S:MANGILITBasti] WaterBottle.objects.filter(color__in=['Silver', 'Blue'])
 [P: VICERALJared] [S:MANGILITBasti] WaterBottle.objects.order_by('brand')
 [P: VICERALJared] [S:MANGILITBasti] WaterBottle.objects.filter(mouth_size='Wide Mouth')
