@@ -18,11 +18,10 @@ from django.db import models
 from django.utils import timezone
 
 class Supplier(models.Model): 
-    name = models.CharField(max_length=100)
-    city = models.CharField(max_length=100)
-    country = models.CharField(max_length=100)
+    name = models.CharField(max_length=150)
+    city = models.CharField(max_length=60)
+    country = models.CharField(max_length=60)
     created_at = models.DateTimeField(blank=True, null=True)
-    objects = models.Manager()
     
     def getName(self):
         return self.name
@@ -31,10 +30,10 @@ class Supplier(models.Model):
         return f"{self.name} - {self.city}, {self.country} created at: {self.created_at}"
 
 class WaterBottle(models.Model):
-    sku =  models.CharField(max_length=10, unique=True)
-    brand = models.CharField(max_length=50)
+    sku =  models.CharField(max_length=20, unique=True)
+    brand = models.CharField(max_length=100)
     cost = models.DecimalField(max_digits=10, decimal_places=2)
-    size = models.CharField(max_length=50)
+    size = models.CharField(max_length=20)
     mouth_size = models.CharField(max_length=50)
     color = models.CharField(max_length=50)
     supplied_by = models.ForeignKey(Supplier, on_delete=models.CASCADE) 
